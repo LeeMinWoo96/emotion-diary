@@ -1,4 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
 
-.App {
-    padding: 20px;
+body {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nanum Pen Script';
+    min-height: 100vh;
+    margin: 0px;
+
+}
+
+/*반응형때 주로 쓰이는 기술 650 보다 작을때
+width 를 640으로 고정 */
+@media (min-width: 650px) {
+    .App {
+        width: 640px;
+    }
+}
+/*페이지 사이즈가 650 보다 넘으면 90%로 */
+@media (max-width: 650px) {
+    .App {
+        width: 90vw;
+    }
+}
+#root {
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+.App{
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
