@@ -33,3 +33,64 @@ width 를 640으로 고정 */
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.MyButton {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    font-size: 18px;
+    white-space: nowrap;
+    font-family: "Nanum Pen Script";
+}
+
+.MyButton_default{
+    background-color: #ececec;
+    color: black;
+}
+.MyButton_positive{
+    background-color: #64c964;
+    color: white;
+}
+.MyButton_negative{
+    background-color: #fd565f;
+    color: white;
+
+}
+
+/* header*/
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+}
+header >div {
+    display: flex;
+}
+
+header .head_text {
+    width: 50%;
+    font-size: 25px;
+    /*가로 축 중앙정령*/
+    justify-content: center;
+}
+header .head_btn_left {
+    width: 25%;
+    /*좌측*/
+    justify-content: start;
+}
+header .head_btn_right{
+    width: 25%;
+    justify-content: end;
+}
+
+header button{
+    font-family: "Nanum Pen Script";
+}
