@@ -43,10 +43,35 @@ export const DiaryStateContext = React.createContext();
 export const DiaryDispatchContext = React.createContext();
 
 
+const dummyData = [
+    {
+        id : 1,
+        emotion: 1,
+        content: "오늘의 일기 1점",
+        date: 1688948163118
+    },
+    {
+        id : 2,
+        emotion: 2,
+        content: "오늘의 일기 2점",
+        date: 1688948163119
+    },
+    {
+        id : 3,
+        emotion: 3,
+        content: "오늘의 일기 3점",
+        date: 1688948163111
+    },
+    {
+        id : 4,
+        emotion: 4,
+        content: "오늘의 일기 4점",
+        date: 1888948163111
+    },
+]
 function App() {
 
-    const [data, dispatch] = useReducer(reducer,[]);
-
+    const [data, dispatch] = useReducer(reducer,dummyData);
     const dataId = useRef(0);
     const onCreate = (date, content, emotion) =>{
         dispatch({type : "CREATE", data : {
@@ -78,7 +103,6 @@ function App() {
             }>
                 <BrowserRouter>
                     <div className="App">
-                        <h2>App.js</h2>
                         <Routes>
                             <Route path='/' element={<Home />}></Route>
                             <Route path='/new' element={<New />}></Route>
