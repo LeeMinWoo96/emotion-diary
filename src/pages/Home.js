@@ -32,7 +32,7 @@ const Home = () =>{
     },[diaryList,curDate])
 
     useEffect(() => {
-        console.log(data);
+        // console.log(data);
     },[data]);
 
     const headText = `${curDate.getFullYear()}년 ${curDate.getMonth()+1} 월`
